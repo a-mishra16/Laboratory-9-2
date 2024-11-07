@@ -39,6 +39,14 @@ int main()
 		cout << "The data are not increasing." << endl;
 	}
 
+	if (isSortedDecreasing(inputs, length) == true)
+	{
+		cout << "The data are decreasing." << endl;
+	}
+	else
+	{
+		cout << "The data are not decreasing." << endl;
+	}
 }
 
 bool isSortedIncreasing(int values[], int size)
@@ -46,6 +54,21 @@ bool isSortedIncreasing(int values[], int size)
 	for (int i = 0; i < size; i++)
 	{
 		if (values[i] < values[i + 1])
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+
+bool isSortedDecreasing(int values[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (values[i] > values[i + 1])
 		{
 			return true;
 		}
