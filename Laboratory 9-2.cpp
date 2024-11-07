@@ -129,4 +129,4 @@ bool hasDuplicates(int values[], int size)
 		
 	}
 	return hasDups;
-}
+} 
